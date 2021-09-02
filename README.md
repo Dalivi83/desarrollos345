@@ -1,5 +1,5 @@
 # Desarrollos 345
-## Sitio para la creación del proyecto grupo de trabajo desarrollo375
+## Sitio para la creación del proyecto grupo de trabajo desarrollos375
 ### 31/08/2021
 * Conformación del grupo
 * Se definen actividades y se genera carpeta para manejo de archivos en OneDrive
