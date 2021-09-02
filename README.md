@@ -7,4 +7,5 @@
 ### 01/09/2021
 * Generación de las historias de usuarios del Sprint 1
 * Generación del mockup del Sprint 1
-* Se da inicio a la creación del requerimiento
+* Se da inicio a la creación del requerimiento del Srpint 1
+* Se organiza la información de las actas al día
