@@ -12,3 +12,5 @@
 ### 02/09/2021
 * Se realizan aclaraciones para el manejo de git y github
 * Se resuelven y se dan aclaraciones para el manejo  de html  
+### 03/09/2021
+* Priorización de temas para la entrega número 0
