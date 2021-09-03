@@ -9,3 +9,6 @@
 * Generación del mockup del Sprint 1
 * Se da inicio a la creación del requerimiento del Srpint 1
 * Se organiza la información de las actas al día
+### 02/09/2021
+* Se realizan aclaraciones para el manejo de git y github
+* Se resuelven y se dan aclaraciones para el manejo  de html  
