@@ -14,3 +14,5 @@
 * Se resuelven y se dan aclaraciones para el manejo  de html  
 ### 03/09/2021
 * Priorización de temas para la entrega número 0
+### 08/09/2021
+* Se realiza la actualización de las tereas y se actualiza el backlog
