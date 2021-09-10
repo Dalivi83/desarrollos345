@@ -4,7 +4,7 @@
 * Conformación del grupo
 * Se definen actividades y se genera carpeta para manejo de archivos en OneDrive
 * Se realiza la primera reunión para validar los temas del proyecto
-### 01/09/2021
+#### 01/09/2021
 * Generación de las historias de usuarios del Sprint 1
 * Generación del mockup del Sprint 1
 * Se da inicio a la creación del requerimiento del Srpint 1
