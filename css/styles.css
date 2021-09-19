@@ -1,0 +1,125 @@
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/****************
+* === Reset ===
+*****************/
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/****************
+* === Header ===
+*****************/
+.header-wrapper {
+    border-bottom: 7px solid #001c40;
+    /* background-color: #1b4d89; */
+    background-color: #515e7b;
+}
+
+.header-section {
+    /* max-width: 1200px; */
+    padding: 5px 0;
+    /* color: #fae60a; */
+    color: #b9beca;
+}
+
+.main-title__link {
+    color: unset;
+    text-decoration: none;
+}
+
+.main-title__link:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+.nav-menu {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.nav-menu-item {
+    padding: 0 24px;
+    /* border-right: 2px solid #fae60a; */
+    border-right: 2px solid #001c40;
+    text-decoration: none;
+}
+
+.nav-menu-item:last-child {
+    border-right: none;
+}
+
+.nav-menu-item__link {
+    padding: 2px 0;
+    color: unset;
+    text-decoration: none;
+}
+
+.nav-menu-item__link:hover {
+    color: #001c40;
+    /* border-bottom: 2px solid #fae60a; */
+    border-bottom: 2px solid #001c40;
+}
+
+
+/****************
+* === Main ===
+*****************/
+.carousel-section {
+    height: 400px;
+}
+
+/****************
+* === Footer ===
+*****************/
+.footer-wrapper {
+    border-top: 7px solid #9caab8;
+    /* background-color: #fae60a; */
+    background-color: #e5e5e5;
+}
+
+.footer-section {
+    /* max-width: 1200px; */
+    padding: 24px 0;
+    color: #000;
+}
+
+/* Técnica usada para posicionar el footer */
+/* No funciona en IE 11 y anteriores */
+.controlled-growth {
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto; */
+    flex: 1 0 auto;    
+}
+
+[class*="-section"] {
+    max-width: 1200px;
+}
+
+.spacer-v {
+    max-width: 2px;
+    background-color: #9caab8;
+}
