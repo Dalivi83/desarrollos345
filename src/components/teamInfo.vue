@@ -6,7 +6,7 @@
               <v-img
                 class="white--text align-end"
                 height="200px"
-                :src="team.foto"
+                :src="team.src"
               >
                 
               </v-img>
