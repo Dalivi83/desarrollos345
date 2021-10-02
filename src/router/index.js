@@ -25,6 +25,7 @@ const routes = [
     name: 'Equipo',
     component: () => import('../views/Team.vue')
   }
+  ,
 ]
 
 const router = new VueRouter({
