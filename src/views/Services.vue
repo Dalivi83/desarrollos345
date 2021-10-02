@@ -26,7 +26,7 @@
           v-model="dialog"
           max-width="500px"
         >
-          <!-- <template v-slot:activator="{ on, attrs }">
+          <template v-slot:activator="{ on, attrs }">
             
             <v-btn
               color="primary"
@@ -45,7 +45,7 @@
             </v-card-title>
 
  
-            <!-- <v-card-actions>
+             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn
                 color="blue darken-1"
@@ -77,7 +77,7 @@
         </v-dialog>
       </v-toolbar>
     </template>
-    <template v-slot:item.actions="{ item }">
+    <template>
       <v-icon
         small
         class="mr-2"
