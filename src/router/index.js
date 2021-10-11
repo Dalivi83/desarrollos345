@@ -24,14 +24,19 @@ const routes = [
     path: '/team',
     name: 'Equipo',
     component: () => import('../views/Team.vue')
-  }
-  ,
+  },
+  {
+    path: '/nuevoUsuario',
+    name: 'nuevoUsuario',
+    component: () => import('../views/nuevoUsuario.vue')
+  },
+
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
-})
+});
 
 export default router

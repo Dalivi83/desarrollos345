@@ -12,8 +12,9 @@
       >
 
       <v-spacer></v-spacer>
+      <account-button @open-login="showLogin = true"></account-button>
 
-      <v-menu left bottom>
+      <!-- <v-menu left bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
             <v-icon>mdi-dots-vertical</v-icon>
@@ -25,7 +26,7 @@
             <v-list-item-title>Option {{ n }}</v-list-item-title>
           </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
     </v-app-bar>
 
     <!-- Sizes your content based upon application components -->
@@ -40,22 +41,34 @@
     <v-footer app>
       <!-- -->
     </v-footer>
+    <v-dialog v-model="showLogin" persistent max-width="400">
+            <login @login-success="showLogin = false"></login>
+    </v-dialog>
   </v-app>
+
 </template>
 
 <script>
+import AccountButton from './components/AccountButton.vue';
+import Login from './components/Login.vue';
 import Nav from "./components/Nav.vue";
 
 export default {
   components: {
     Nav,
+    AccountButton,
+    Login,
   },
-  data() {
-    return {
+  data: () => ({
+      showLogin: false,
       drawer: true,
       title: "Desarrollos|345",
-    };
-  },
+    }),
+  computed: {
+      username() {
+        return sessionStorage.getItem("username");
+      },
+    },
   methods: {
     toggleDrawer() {
       this.drawer = !this.drawer;
