@@ -138,11 +138,71 @@
             >
                 Reseter
             </v-btn>
-            </template> -->
+          </template> -->
+          <v-card>
+            <v-card-title>
+              <span class="font-weight-medium">{{ formTitle }}</span>
+            </v-card-title>
 
-      
-
-    
+ 
+             <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn
+                color="blue darken-1"
+                text
+                @click="close"
+              >
+                Cancel
+              </v-btn>
+              <v-btn
+                color="blue darken-1"
+                text
+                @click="save"
+              >
+                Guardar
+              </v-btn>
+            </v-card-actions> -->
+          </v-card>
+        </v-dialog>
+        <v-dialog v-model="dialogDelete" max-width="500px"> -->
+          <v-card>
+            <v-card-title class="text-h5">Servicio</v-card-title>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn color="blue darken-1" text @click="closeDelete">Cancel</v-btn>
+              <v-btn color="blue darken-1" text @click="deleteItemConfirm">OK</v-btn>
+              <v-spacer></v-spacer>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+      </v-toolbar>
+    </template>
+    <template>
+      <v-icon
+        small
+        class="mr-2"
+        @click="editItem(item)"
+      >
+        mdi-pencil
+      </v-icon>
+      <v-icon
+        small
+        @click="deleteItem(item)"
+      >
+        mdi-delete
+      </v-icon>
+    </template>
+    <!-- <template v-slot:no-data>
+      <v-btn
+        color="primary"
+        @click="initialize"
+      >
+        Reset
+      </v-btn>
+    </template> -->
+    </v-data-table>
+  </div>
+</template>
   </v-data-table>
 </v-container>
 </template>
