@@ -22,10 +22,16 @@ const routes = [
   },
   {
     path: '/team',
-    name: 'Equipo',
+    name: 'Team',
     component: () => import('../views/Team.vue')
   }
   ,
+   {
+    path: '/Form',
+    name: 'Form',
+    component: () => import('../views/Form.vue')
+  },
+
 ]
 
 const router = new VueRouter({
