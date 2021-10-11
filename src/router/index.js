@@ -22,13 +22,19 @@ const routes = [
   },
   {
     path: '/team',
-    name: 'Equipo',
+    name: 'Team',
     component: () => import('../views/Team.vue')
   },
   {
+
     path: '/nuevoUsuario',
     name: 'nuevoUsuario',
     component: () => import('../views/nuevoUsuario.vue')
+  },
+  {
+    path: '/Form',
+    name: 'Form',
+    component: () => import('../views/Form.vue')
   },
 
 ]
