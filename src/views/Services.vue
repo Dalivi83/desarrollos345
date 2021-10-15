@@ -10,11 +10,12 @@
         <template v-slot:top>
             <v-toolbar flat >
                 <v-toolbar-title>
-                <h1 class="font-weight-black">
-                 Servicios
+                <h1 class="font-weight-regular">
+                 Servicios Registrados
                 </h1> 
             </v-toolbar-title>
                 
+                <v-spacer></v-spacer>
                 <v-spacer></v-spacer>
                 <v-dialog
                 v-model="dialog"
@@ -56,20 +57,43 @@
                             
                              </v-row>
                         </v-col>
+
                         <v-col>
                             <v-row
                                 cols="12"
                                 sm="6"
                                 md="4"
-                                >
+                            >
+                            
                                 <v-text-field
-                                v-model="editedItem.ImagenPrincipal"
-                                label="Imagen"
-                                ></v-text-field>                            
+                                v-model="editedItem.DescripcionCorta"
+                                label="Descripción Corta"
+                                ></v-text-field> 
+                            
+                             </v-row>
+                        </v-col>
+
+                        <v-col>
+                          <v-card-imagen>
+                            <v-row
+                                cols="12"
+                                sm="6"
+                                md="4"
+                                >
+                                <div>
+                                  Imagen
+                                 <v-img
+                                  src="../assets/img/IMG-SERV-Bases_de_datos.png.jpg"
+                                  height="110"
+                                  class="grey darken-4"
+                                  
+                                  ></v-img>
+                             </div>
                             </v-row>
+                          </v-card-imagen>
                           </v-col>
                     </v-container>
-                </v-card-text> 
+                </v-card-text>                
 
                 <v-card-actions>
                 <v-spacer></v-spacer>
@@ -132,7 +156,7 @@
         
         { text: 'Servicio', value: 'NombreServicio' },
         { text: 'Descripción', value: 'Descripcion' },
-        { text: 'Imagen', value: 'ImagenPrincipal' , sortable: false},
+        { text: 'Descripción Corta', value: 'DescripcionCorta' , sortable: false},
         { text: 'Acciones', value: 'actions', sortable: false},
         
       ],

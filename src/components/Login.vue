@@ -52,8 +52,8 @@ export default {
             //     sessionStorage.setItem("role", "user");
             // }
 
-            this.$emit("login-success", this.username);
-            window.location.reload();
+            //this.$emit("login-success", this.username);
+            //window.location.reload();
         },
         nuevoUsuario(){
                 window.location.href="/nuevoUsuario"
